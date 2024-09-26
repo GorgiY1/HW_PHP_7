@@ -1,0 +1,335 @@
+body {
+    background: linear-gradient(135deg, #000428, #004e92); /* Gradient background */
+    color: #fff; /* White text */
+    font-family: 'Roboto', sans-serif; /* Modern font */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    
+    height: 100vh; /* Full height */
+    overflow: hidden; /* Hide overflow */
+}
+.container {
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    padding: 30px; /* Larger padding */
+    border: 2px solid lightblue;
+    box-shadow: 0 0 75px rgba(0, 255, 255, 0.5);
+    border-radius: 20px; /* More rounded corners */
+    
+    max-width: 400px; /* Max width */
+    width: 100%; /* Full width */
+    text-align: center; /* Center text */
+}
+.form-container {
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    padding: 30px; /* Larger padding */
+    border: 2px solid lightblue;
+    box-shadow: 0 0 75px rgba(0, 255, 255, 0.5);
+    border-radius: 20px; /* More rounded corners */
+    
+    max-width: auto; /* Max width */
+    width: 600px; /* Full width */
+    text-align: center; /* Center text */
+height: auto;
+overflow-y: auto;
+overflow-x: hidden;
+margin: 30px auto;
+}
+
+/* Стилізація смуги прокрутки */
+.container {
+    background: linear-gradient(145deg, #2a2a2a, #1f1f1f);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6), inset 0 0 10px rgba(0, 0, 0, 0.3), 0 0 300px 2px rgba(0, 123, 255, 0.6);
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin: 0 auto;
+}
+
+.menu 
+{
+    display: flex;
+    justify-content: center;
+    
+    background-color: #1a1a1a;
+    padding: 15px 0;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.3);
+
+
+}
+
+    .menu a {
+        color: #00bfff;
+        margin-left: 15px;
+        margin-right: 15px;
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: bold;
+        padding: 10px 20px;
+        border-radius: 15px;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        .menu a:hover {
+            background-color: #00bfff;
+            color: #1a1a1a;
+            box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+        }
+.table_menu {
+    padding: 0px 0;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    justify-content: left;
+    width: 300px;
+}
+
+    .table_menu a {
+        font-size: 1rem;
+        font-weight: normal;
+        padding: 3px 7px;
+        border-radius: 5px;
+    }
+
+        
+/* Стилізація смуги прокрутки */
+.form-container::-webkit-scrollbar {
+    width: 12px;
+    background-color: #2a2a2a;
+}
+
+.form-container::-webkit-scrollbar-thumb {
+    background: linear-gradient(145deg, #007BFF, #0056b3);
+    border-radius: 6px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3), 0 0 5px rgba(0, 123, 255, 0.6);
+}
+
+    .form-container::-webkit-scrollbar-thumb:hover {
+        background: linear-gradient(145deg, #0056b3, #003d7a);
+    }
+
+.form-container::-webkit-scrollbar-track {
+    background: #1f1f1f;
+    border-radius: 10px;
+}
+
+/* Стилі для полів вводу */
+form {
+    width: 100%;
+    padding: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    /*color: #00bfff;*/
+    color: wheat;
+    text-shadow: 0 0 5px rgba(0, 191, 255, 0.6);
+    font-size: 30px;
+}
+
+input[type="text"], input[type="password"], textarea {
+    width: 90%;
+    padding: 12px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    background: linear-gradient(145deg, #3a3a3a, #2e2e2e);
+    border: 2px solid #444;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+    input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
+        outline: none;
+        border-color: #00bfff;
+        box-shadow: 0 0 10px rgba(0, 123, 255, 0.8), inset 0 0 15px rgba(0, 123, 255, 0.4);
+    }
+
+input[type="radio"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background: linear-gradient(145deg, #3a3a3a, #2e2e2e);
+    border: 2px solid #444;
+    border-radius: 50%;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+    input[type="radio"]:checked {
+        background-color: #00bfff;
+        box-shadow: 0 0 10px rgba(0, 123, 255, 0.8), inset 0 0 15px rgba(0, 123, 255, 0.4);
+        border-color: #00bfff;
+    }
+
+    input[type="radio"]:focus {
+        outline: none;
+        box-shadow: 0 0 10px rgba(0, 123, 255, 0.8), inset 0 0 15px rgba(0, 123, 255, 0.4);
+    }
+
+/* Стилізація повідомлень про помилки */
+.error-message {
+    color: #ff5555;
+    font-size: 14px;
+    text-shadow: 0 0 5px rgba(255, 85, 85, 0.8);
+}
+
+/* Стилізація кнопок */
+.button, input[type="submit"], input[type="reset"] {
+    color: #00bfff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: #1a1a1a;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.3);
+}
+
+    button:hover, input[type="submit"]:hover, input[type="reset"]:hover {
+        background-color: #00bfff;
+        color: #1a1a1a;
+        box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+    }
+
+    button:focus, input[type="submit"]:focus, input[type="reset"]:focus {
+        outline: none;
+        box-shadow: 0 0 20px rgba(0, 123, 255, 1), 0 0 40px rgba(0, 123, 255, 0.8);
+    }
+
+.form-group {
+    height: 113.56px;
+}
+
+table {
+    /*margin: 40px;*/
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+    border-radius: 15px; /* Rounded corners */
+    overflow: hidden; /* Hide overflow */
+    box-shadow: 0 0 60px darkblue; /* White shadow */
+}
+
+thead {
+    background-color: darkslateblue; /* Semi-transparent white background for header */
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    color: #fff; /* White text */
+}
+
+th {
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background for even rows */
+}
+
+tr:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Lighter hover color */
+}
+
+.user-list {
+    background-color: rgba(0, 0, 0, 0.7); /* Slightly lighter background for user list */
+    padding: 20px; /* Padding around user list */
+    border-radius: 10px; /* Rounded corners */
+    border: 1px solid #444; /* Border around user list */
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3); /* Light shadow */
+    margin-bottom: 30px;
+}
+.user-list p {
+    background-color: rgba(255, 255, 255, 0.1); /* Light background for user entries */
+    padding: 10px; /* Padding around text */
+    margin: 10px 0; /* Margin between entries */
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #555; /* Border around entries */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Shadow for entries */
+}
+table {
+/*margin: 40px;*/
+background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+border-radius: 15px; /* Rounded corners */
+overflow: hidden; /* Hide overflow */
+box-shadow: 0 0 60px darkblue; /* White shadow */
+}
+
+thead {
+background-color: darkslateblue; /* Semi-transparent white background for header */
+}
+
+th, td {
+padding: 12px;
+text-align: left;
+color: #fff; /* White text */
+}
+
+th {
+font-weight: bold;
+}
+
+tr:nth-child(even) {
+background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background for even rows */
+}
+
+tr:hover {
+background-color: rgba(255, 255, 255, 0.2); /* Lighter hover color */
+}
+
+.user-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.user-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    padding: 20px;
+    margin-bottom: 10px;
+    border: 2px solid lightblue;
+    box-shadow: 0 0 75px rgba(0, 255, 255, 0.5);
+    border-radius: 10px;
+    width: 60%;
+}
+.user-info {
+    flex-grow: 1;
+}
+.user-actions {
+    display: flex;
+    align-items: center;
+}
+.user-actions form {
+    margin-left: 10px;
+}
+input[type="text"] {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 5px;
+}
+.button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(43, 106, 242);
+    color: black;
+    cursor: pointer;
+}
+button:hover {
+    background-color: darkblue;
+    color: white;
+}
